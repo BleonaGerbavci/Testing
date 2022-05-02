@@ -1,6 +1,7 @@
 import React,{Component, useState, useEffect } from 'react';
 import axios from 'axios';
 import TextField from '@mui/material/TextField';
+import KompaniaUpdate from './KompaniaUpdate';
 
 
 export default function Kompania() {

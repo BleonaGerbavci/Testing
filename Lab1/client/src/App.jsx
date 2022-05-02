@@ -1,5 +1,6 @@
 import Home from './Home';
 import Kompania from './Kompania';
+import KompaniaUpdate from './KompaniaUpdate';
 import {BrowserRouter, Route, Switch,NavLink, Routes} from 'react-router-dom';
 
 
@@ -23,12 +24,18 @@ function App() {
               Kompania
             </NavLink>
           </li>
+          <li className="nav-item- m-1">
+            <NavLink className="btn btn-light btn-outline-primary" to="/kompaniaUpdate">
+              Perditeso Kompanine
+            </NavLink>
+          </li>
         </ul>
       </nav>
 
       <Routes>
         <Route path="/home" element={<Home />} />
         <Route path='/kompania' element={<Kompania />}/>
+        <Route path='/kompaniaUpdate' element={<KompaniaUpdate />}/>
        
       </Routes>
     </div>
